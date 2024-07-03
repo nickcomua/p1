@@ -1,0 +1,4 @@
+(executable
+ (public_name p1)
+ (name main)
+ (libraries p1 lwt.unix Logs logs.lwt))
