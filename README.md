@@ -20,12 +20,25 @@
 3. Через випадковий проміжок часу тривалістю від 5 до 20 секунд відправляє у сокет повідомлення "я живий"(i am alive!).
 4. Через випадковий проміжок часу тривалістю від 60 до 120 секунд - завершує виконання.
 
+## Init
+
+```sh
+git clone https://github.com/nickcomua/p1.git
+cd p1
+
+opam switch create ./ 4.14.0 # to create a local switch
+# or
+opam install . # to install dependencies globally
+```
+
 ## Build
+
 ```sh
 dune build
 ```
 
 ## Run
+
 ```sh
 dune exec p1 5
 # or
